@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kalo Kattu</title>
+  <!-- Font Lato -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400&display=swap" rel="stylesheet">
+
+  <!-- bootstrap css -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+
+  <!-- icon css -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+    integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+  <!-- internall css -->
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+  <div class="wrap">
+    <div>
+      <img src="image/tagandlogo.png" alt="Logo" class="logo">
+    </div>
+
+
+    <!-- nav bar-->
+    <div>
+      <div>
+        <nav class="navbar">
+          <div>
+            <form class="d-flex" id="form">
+              <input class="form-control " type="search" placeholder="Search...." aria-label="Search">
+              <button aria-label="search button" class="searchButton" type="Search"><i class="fas fa-search "
+                  alt="search icon"></i></button>
+            </form>
+          </div>
+          <ul id="menulist">
+            <li><a href="home.html" class="navbar-brand" style="font-weight: 500;"> Home </a></li>
+            <li><a href="Contact.html" class="navbar-brand" style="font-weight: 500;"> Contact</a></li>
+            <li><a href="About.html" class="navbar-brand" style="font-weight: 500;"> About </a></li>
+            <li><a href="Service.html" class="navbar-brand" style="font-weight: 500;"> Service</a></li>
+          </ul>
+          <i class="fas fa-bars " onclick="menu()"></i>
+      </div>
+      </nav>
+    </div>
+
+    <!--breadcumb-->
+    <div class="mx-3">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="home.html">Home</a></li>
+        <li class="breadcrumb-item"><a href="home.html">Shoes</a></li>
+        <li class="breadcrumb-item"><a href="prod.html">Air Jordan Retro</a></li>
+        <li class="breadcrumb-item active" aria-current=" add to cart page">Add to Cart</li>
+      </ol>
+    </div>
+
+    <!--Your Cart-->
+    <p style="font-size:20px; margin-top:1%; margin-left:1%;">
+      Your cart
+    <p>
+      <!--body-->
+
+
+
+
+      <!-- modal -->
+
+    <div class="modal fade" id="buy" tabindex="-1" aria-labelledby="buy1" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title h5 " id="buy1">Please enter the information.</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body p-2">
+
+            <div>
+              <form>
+                <div class="form-group">
+                  <label for="Phonenumber">Mobile Number</label>
+                  <input type="Phonenumber" class="form-control" aria-describedby="Phonenumber"
+                    placeholder="Enter mobile number">
+                  <small class="form-text text-muted">We'll never share your Mobile number with anyone else.</small>
+                </div>
+                <div class="form-group">
+                  <label for="Address">Address</label>
+                  <input type="Address" class="form-control" placeholder="Password">
+                </div>
+                <button type="Submit" class="btn btn-success mt-1">Submit</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="modal fade" id="delete" tabindex="-1" aria-labelledby="delete1" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title h5 " id="delete1">Succesfully deleted.</h1>
+          </div>
+          <div class="modal-body p-2">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <div class="container-fluid">
+    <div class="row mb-3">
+      <div class="col-md-2">
+        Image
+      </div>
+      <div class="col-md-2">
+        Product Description
+      </div>
+      <div class="col-md-2">
+        Size
+      </div>
+      <div class="col-md-2">
+        Price
+      </div>
+      <div class="col-md-2">
+
+      </div>
+      <div class="col-md-2">
+
+      </div>
+    </div>
+    <div class="row  mb-3">
+      <div class="col-md-2">
+        <img src="image/shoes/mero.jpg" alt="Product image" style="width:50%;">
+      </div>
+      <div class="col-md-2">
+        Air Jordan Retro 1 High OG Smokey Gray
+      </div>
+      <div class="col-md-2">
+        <select class="btn btn-secondary">
+          <option value="1">Size</option>
+          <option value="2">36</option>
+          <option value="3">37</option>
+          <option value="4">38</option>
+        </select>
+      </div>
+      <div class="col-md-2">
+        Rs 6800
+      </div>
+      <div class="col-md-2">
+        <button type="button" class="btn btn-success mt-1 mr-2" data-bs-toggle="modal" data-bs-target="#buy">
+          Buy
+        </button>
+      </div>
+      <div class="col-md-2">
+        <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#delete"
+          style="margin-top:1%;">
+          Delete
+        </button>
+      </div>
+    </div>
+    <div class="brand"></div>
+    <div class="row mb-3">
+      <div class="col-md-2">
+        <img src="image/shoes/mero.jpg" alt="Product image" style="width:50%;">
+      </div>
+      <div class="col-md-2">
+        Air Jordan Retro 1 High OG Smokey Gray
+      </div>
+      <div class="col-md-2">
+        <select class="btn btn-secondary">
+          <option value="1">Size</option>
+          <option value="2">36</option>
+          <option value="3">37</option>
+          <option value="4">38</option>
+        </select>
+      </div>
+      <div class="col-md-2">
+        Rs 6800
+      </div>
+      <div class="col-md-2">
+        <button type="button" class="btn btn-success mt-1 mr-2" data-bs-toggle="modal" data-bs-target="#buy">
+          Buy
+        </button>
+      </div>
+      <div class="col-md-2">
+        <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#delete"
+          style="margin-top:1%;">
+          Delete
+        </button>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- Footer -->
+  <div class="footer">
+    <footer class="page-footer font-small indigo">
+      <div class="container text-center text-md-left">
+        <div class="row">
+          <div class="col-md-3 mx-auto">
+            <a href="Contact.html" style="text-decoration: none;">
+              <p class="bold">ABOUT</p>
+            </a>
+            Launched on 2020, KaloKattu is situated on Budhanilkantha, Kathmandu. Old Denim product are also avilable.
+            </ul>
+          </div>
+          <hr class="clearfix w-100 d-md-none">
+          <hr class="clearfix w-100 d-md-none">
+          <div class="col-md-3 mx-auto">
+            <p class="bold">CATEGORIES</p>
+            <a href="#tshirt" style="text-decoration:none; color:black;">T-shirt, Shirt</a><br>
+            <a href="#pant" style="text-decoration:none; color:black;">Pant, Joggers</a><br>
+            <a href="#jacket" style="text-decoration:none; color:black;">Jacket, Hoddie</a><br>
+            <a href="#shoe" style="text-decoration:none; color:black;">Shoes</a><br>
+            <a href="#boxer" style="text-decoration:none; color:black;">Boxer</a>
+          </div>
+          <hr class="clearfix w-100 d-md-none">
+          <div class="col-md-3 mx-auto">
+            <a href="Contact.html" style="text-decoration: none;">
+              <p class="bold">CONTACT</p>
+            </a>
+            Follow us on:<br>
+            <a href="https://www.facebook.com/kalo.kattu.908" alt="kalo kattu facebook link" aria-label="facebook"
+              target="_blank" rel="kalo kattu facebook"> <i class="fab fa-facebook fa-lg" alt="facebook link"></i></a>
+            <a href="https://www.instagram.com/kalo.kattu/" alt="kalo kattu insta link" aria-label="instagram"
+              target="_blank" rel="kalo kattu instagram"><i class="fab fa-instagram fa-lg" alt="instagram link"></i></a>
+            <br>
+            For more information contact on : 9800000000
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright text-center">
+        <p class="copyright">Copyright © 2021 KaloKattu, All Rights Reserved.</p>
+      </div>
+    </footer>
+  </div>
+
+
+  <script>
+    var menulist = document.getElementById("menulist");
+
+    menulist.style.maxHeight = "0px";
+
+    function menu() {
+      if (menulist.style.maxHeight == "0px") {
+        menulist.style.maxHeight = "130px";
+      }
+      else {
+        menulist.style.maxHeight = "0px";
+      }
+    }
+
+  </script>
+
+  <button type="button" class="btn btn-success mt-1 mr-2 d-none" id="yes">
+    Buy
+  </button>
+
+  <script>
+    function validd() {
+      var a = document.getElementById("yah").value;
+      var b = document.getElementById("yea").value;
+      a = parseInt(a);
+      if (a != null && a != "" && b != null && b != "" && Number.isInteger(a) && isString(b)) {
+
+        document.getElementById("yes").click();
+      }
+
+    }
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"
+    integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js"
+    integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

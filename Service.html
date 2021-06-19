@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Service</title>
+  <!-- Font Lato -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400&display=swap" rel="stylesheet">
+
+  <!-- bootstrap css -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+
+  <!-- icon css -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+    integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+  <!-- internall css -->
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+  <div class="wrap">
+    <div>
+      <img src="image/tagandlogo.png" alt="Logo" class="logo">
+    </div>
+
+
+    <!-- nav bar-->
+    <div>
+      <div>
+        <nav class="navbar">
+          <div>
+            <form class="d-flex" id="form">
+              <input class="form-control " type="search" placeholder="Search...." aria-label="Search">
+              <button aria-label="search button" class="searchButton" type="Search"><i class="fas fa-search "
+                  alt="search icon"></i></button>
+            </form>
+          </div>
+          <ul id="menulist">
+            <li><a href="home.html" class="navbar-brand" style="font-weight: 500;"> Home </a></li>
+            <li><a href="Contact.html" class="navbar-brand" style="font-weight: 500;"> Contact</a></li>
+            <li><a href="About.html" class="navbar-brand" style="font-weight: 500;"> About </a></li>
+            <li><a href="Service.html" class="navbar-brand" style="font-weight: 500;"> Service</a></li>
+          </ul>
+          <i class="fas fa-bars " onclick="menu()"></i>
+      </div>
+      </nav>
+    </div>
+
+    <!--breadcumb-->
+    <div class="mx-3">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="home.html">Home</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Service</li>
+      </ol>
+    </div>
+
+
+    <!--Body-->
+    <div class="container">
+      <h2 > Service We Provide</h2>
+
+      <p>
+        1. We are open from <b>8AM - 8PM</b>.<br>
+        2. We are avilable online and we also have store on Budhanilkantha.<br>
+        3. We do exchange over 24 hours of purchase (Not online).<br>
+        4. We sell genuine <b>OLD DENIM</b> product.<br>
+        5. We sell Shoe, <b>Boxer, Tshirt, Pant, and Jacket</b><br>
+      </p>
+    </div>
+
+
+    <!-- Footer -->
+    <div class="footer">
+      <footer class="page-footer font-small indigo">
+        <div class="container text-center text-md-left">
+          <div class="row">
+            <div class="col-md-3 mx-auto">
+              <a href="about.html" style="text-decoration:none;">
+                <p class="bold">ABOUT</p>
+              </a>
+              Launched on 2020, KaloKattu is situated on Budhanilkantha, Kathmandu. Old Denim product are also avilable.
+              </ul>
+            </div>
+            <hr class="clearfix w-100 d-md-none">
+            <hr class="clearfix w-100 d-md-none">
+            <div class="col-md-3 mx-auto">
+              <p class="bold">CATEGORIES</p>
+              T-shirt, Shirt<br>
+              Pant, Joggers<br>
+              Jacket, Hoddie<br>
+              Shoes<br>
+              Boxer
+            </div>
+            <hr class="clearfix w-100 d-md-none">
+            <div class="col-md-3 mx-auto">
+              <a href="contact.html" style="text-decoration:none;">
+                <p class="bold">CONTACT</p>
+              </a>
+              Follow us on:<br>
+              <a href="https://www.facebook.com/kalo.kattu.908" aria-label="Facebook link"> <i
+                  class="fab fa-facebook fa-lg" alt="facebook link"></i></a>
+              <a href="https://www.instagram.com/kalo.kattu/" aria-label="Insta link"><i class="fab fa-instagram fa-lg"
+                  alt="instagram link"></i></a>
+              <br>
+              For more information contact on : 9800000000
+            </div>
+          </div>
+        </div>
+        <div class="footer-copyright text-center">
+          <p class="copyright">Copyright © 2021 KaloKattu, All Rights Reserved.</p>
+        </div>
+      </footer>
+    </div>
+    <script>
+      var menulist = document.getElementById("menulist");
+
+      menulist.style.maxHeight = "0px";
+
+      function menu() {
+        if (menulist.style.maxHeight == "0px") {
+          menulist.style.maxHeight = "130px";
+        }
+        else {
+          menulist.style.maxHeight = "0px";
+        }
+      }
+    </script>
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"
+      integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js"
+      integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc"
+      crossorigin="anonymous"></script>
+</body>
+
+</html>

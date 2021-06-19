@@ -1,0 +1,326 @@
+*{
+    font-family: Lato;
+}
+img{
+    width: auto;
+    
+}
+
+/* header */
+
+.logo{
+    width:35%;
+}
+
+ .tagline{
+    padding-left:20px;
+    width: 666px;
+    height: 156px;
+} 
+
+.container-fluid{
+    background-color: #dddddd !important;
+    width:98% !important;
+    margin-top: 10px;
+    border-radius: 6px;
+}
+
+/* bread cumbs */
+.breadcrumb-item{
+    margin: 20px 0px 0px 0px;  /* t r b l*/
+}
+ol li a{
+    text-decoration: none;
+    color : black;
+}
+
+/* navigation bar */
+nav{
+    flex: 1;
+    text-align: right;
+    background-color: #dddddd;
+}
+
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    margin-right: 30px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: black;
+}
+nav ul li a:hover
+{
+    color:#db0000;
+}
+.navbar{
+    background-color: #dddddd;
+}
+#form{
+    margin-left: 10px;
+    
+}
+.searchButton
+{
+    margin-top: 1%;
+    width: 14%;
+    border-radius: 2px;
+    background: white;
+    border: none;
+    height: 34px;
+    width: 34px;
+}
+
+
+.fa-bars{
+    display: none;
+}
+
+
+
+
+
+
+
+
+/* ekxin lai*/
+.search-box{
+    position :absolute;
+    top: 189px;
+    left:50%;
+    transform: translate(-50%,-50%);
+    background: #dddddd;
+    height: 40px;
+}
+.search-box:hover > .search-txt{
+    width: 240px;
+    padding: 0 6px;
+}
+.search-box:hover > .search-btn{
+    background: white;
+}
+
+.search-btn{
+  color: black;
+  float: right;
+  width: 40px;
+  height: 40px;
+  background-color: #dddddd;  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+.search-txt{
+    border: none;
+    background: none;
+    outline: none;
+    float: left;
+    padding: 0;
+    color: #dddddd;
+    font-size: 16px;
+    transition: 0.4s;
+    line-height: 40px;
+    width: 0px;
+    
+}
+ 
+
+
+
+
+
+
+
+
+
+/* slider */
+.carousel-item{
+    margin-bottom: 47px ;
+}
+
+/** brand **/
+.brand {
+    padding-top: 60px;
+    border-top: #db0000 solid 6px;}
+
+.brand-bg {
+    background: #ebebeb;
+    padding: 90px 0px;
+}
+
+.margin {
+    margin-bottom: 30px;
+}
+
+.brand-bg .brand_box {
+    background: #fff;
+    text-align: center;
+    padding: 80px 0px 30px 0px ;
+}
+.brand-bg .brand_box > img {
+   height: 200px;
+   width: auto;
+}
+
+.red {
+    color: #ff0000;
+    font-weight: 1000;
+    font-size: 20px;
+
+}
+
+.brand-bg .brand_box span {
+    display: block;
+    color: #19449b;
+    font-size: 16px;
+line-height: 16px;
+padding-bottom: 3px;
+} 
+.brand-bg .brand_box i {
+    padding: 0px 2px;
+}
+
+.read-more { 
+max-width: 212px;
+margin: 0 auto;
+margin-top: 0px;
+display: block;
+background: #000;
+color: #fff !important;
+padding: 12px 0px;
+width: 100%;
+font-size: 17px;
+text-align: center;
+border-radius: 32px;
+margin-top: 40px
+}
+
+.read-more:hover {
+    background: #ff0000;
+}
+.brand_box p{
+    margin: 5px;
+} 
+
+/** end brand **/
+
+/* footer */
+footer{
+    background-color: #dddddd;
+    border-radius: 10px;
+    margin-top: 47px;
+}
+.footer-copyright {
+ background-color:#4C4C4C;
+ 
+}
+footer p{
+    color:#000;
+}
+.copyright{
+    color:#dddddd;
+}
+.footer{
+    margin-top: 10px;
+}
+.bold{
+    font-weight: 700;
+    margin:15px 0px 5px 0px ;
+}
+
+/* category */
+.Category
+{
+    display: inline-block;
+}
+
+/* map  */
+.map-container{
+    overflow:hidden;
+    position:relative;
+    height:0;
+    }
+.map-container iframe{
+    height:50%;
+    width:50%;
+    position:absolute;
+    }
+
+    /* about us body */
+    
+    .link{
+        color: #0044cc;
+    }
+
+/* nav responsive */
+@media only screen and (max-width:750px){
+nav{
+    text-align: left;
+}
+nav ul{
+    width: 100%;
+    background-color: #dddddd;
+    position: absolute;
+    top: 54px;
+    right: 0;
+    z-index: 2;
+}
+nav ul li{
+    display: block;
+}
+
+
+#menulist{
+    overflow: hidden;
+    transition: 0.5s;
+}
+.fa-bars{
+    display: block;
+    margin-right: 20px;
+}
+.carousel-item{
+    margin-top: auto ;
+}
+.logo{
+    width:40%;
+    
+}
+
+}
+@media only screen and (max-width:330px){
+    nav{
+        text-align: left;
+    }
+    nav ul{
+        width: 100%;
+        background-color: #dddddd;
+        position: absolute;
+        top: 70px;
+        right: 0;
+        z-index: 2;
+    }
+    nav ul li{
+        display: block;
+    }
+    
+    
+    #menulist{
+        overflow: hidden;
+        transition: 0.5s;
+    }
+    .fa-bars{
+        display: block;
+        margin-left: 30px;
+        margin-top: 10px;
+    }
+    .carousel-item{
+        margin-top: auto ;
+    }
+    .logo{
+        width:40%;
+        
+    }
+    
+    }
